@@ -5,9 +5,9 @@ const jwt = require("jsonwebtoken");
 const app = express();
 const PORT = process.env.APP_PORT || 4500;
 
-const { checkCredentials } = require('./middelwares/checkCredentials');
-const { reportQuery } = require('./middelwares/report');
-const { verifyToken } = require('./middelwares/verifyToken');
+const { checkCredentials } = require('./middlewares/checkCredentials');
+const { reportQuery } = require('./middlewares/report');
+const { verifyToken } = require('./middlewares/verifyToken');
 const { getToken } = require('./helper/obtainToken');
 const { newUser, userLogin, getProfile } = require('./services/consultas');
 
